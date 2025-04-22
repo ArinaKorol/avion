@@ -1,0 +1,220 @@
+@media (min-width: 300px) and (max-width: 600px){
+    main{
+        font-weight: 400;
+    }
+    
+    .wrap{
+        padding-right: calc(50% - 720px);
+        padding-left: calc(50% - 720px);
+    }
+    
+    header{
+        margin-inline: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        padding-block: 1.2rem;
+    }
+    
+    nav{
+        display: none;
+    }
+    .menu{
+        display: block;
+        z-index: 0;
+        background-color: white;
+    }
+    .dropdown-menu{
+        position:absolute;
+        right: 1.5rem;
+        background-color: white;
+        text-align: right;
+    }
+    .dropdown-menu a{
+        font-size: 1rem;
+        color:#2A254B;
+        padding: 2rem 1rem;
+    }
+    .dropdown-menu li{
+        border: #494565 2px solid
+    }
+    .chair-background{
+        display: none;
+    }
+
+    .list-of-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+
+    .about-brand{
+        width: fit-content;
+        font-size: 1.25rem;
+        margin-inline: 0;
+        margin-block: 0rem
+    }
+    
+    .about-brand-information{
+        background-color: #2A254B;
+        padding: 1.5rem;
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .button-viewcollection{
+        margin-top: 2rem;
+        order: 3;
+    }
+
+    .button-viewcollection:hover{
+        background-color: #F9F9F94D;
+    }
+    
+    .main-text-about-brand{
+        font-size: 1.25rem;
+        order: 1
+    }
+    
+    .text-about-brand{
+        font-size: 1rem;
+        order: 2;
+        margin-top: 10rem;
+    }
+    
+    .menu-icons{
+        display: flex;
+        gap: 1rem;
+        height: 1rem;
+        margin-left: 2rem
+    }
+    
+    .ceramics{
+        margin-block: 3rem 5.1rem;
+        color: #2A254B;
+        display: grid;
+        margin-inline: 1.5rem;
+    }
+    
+    #chair{
+        order:4
+    }
+    #lamp{
+        order:2
+    }
+    #vaseset{
+        order:1
+    }
+    #vase{
+        order:3
+    }
+    .ceramics .button-viewcollection{
+        width: auto;
+        justify-self: normal;
+        margin-top: 0.7rem;
+    }
+    .list-of-items{
+        padding-block: 1rem;
+    }
+    .title-ceramics{
+        font-size: 1.25rem;  
+    }
+    
+    .item{
+        display: grid;
+        gap: 1.5rem;
+        font-size: 1rem;
+    }
+
+    .list-of-items img{
+        height: 13.25rem;
+        width: 10rem
+    }
+    
+    .about-product{
+        color:#2A254B
+    }
+    
+    .button-get-in-touch{
+        font-size: 1.25rem;
+        margin: 0;
+        width: auto;
+        margin-inline: 1.5rem;
+        margin-bottom: 2rem
+    }
+
+    .get-in-touch{
+        flex-direction: column;
+        margin-inline: 0rem;
+    }
+    .get-in-touch img{
+        position: relative;
+    }
+
+    .icons, .footer-upper-block{
+        display: none;
+    }
+
+    .get-in-touch-text{
+        display: grid;
+        gap: 1.5rem;
+        padding: 0rem;
+        max-width: fit-content;
+        margin-left: 0rem;
+        margin-inline: 1.5rem
+    }
+    
+    footer{
+        background-color: #2A254B;
+        color: white;
+        padding: 2.5rem 1.5rem;
+    }
+
+    input{
+        background-color: #FFFFFF26;
+        padding: 1rem 2rem 1rem 2rem;
+        width: min-content;
+        font-size: 1.25rem;
+        color: white
+    }
+    
+   
+    .footer-upper-block{
+        display: grid;
+        margin-inline: 0rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: min-content;
+        gap: 1rem;
+        justify-content: normal;
+    }
+
+    .copyright-and-icons{
+        padding-block: 1.5rem 3.1rem;
+        display: flex;
+        justify-content: space-between;
+        align-self: end;
+    }
+    #categories{
+        grid-column-start:1;
+        grid-row-start: 1;
+        width: 100px
+    }
+    #menu{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    #our-company{
+        grid-row-start: 2;
+    }
+    #form-sign-up{
+        grid-row-start: 3;
+    }
+    .icons{
+        display: none;
+    }
+    
+    
+    
+}

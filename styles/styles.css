@@ -1,0 +1,312 @@
+main{
+    font-weight: 400;
+}
+
+.wrap{
+    padding-right: calc(50% - 720px);
+    padding-left: calc(50% - 720px);
+}
+
+header{
+    margin-inline: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1.2rem;
+}
+
+nav ul{
+    color: #726E8D;
+    display: flex;
+    gap: 2.75rem
+}
+
+.nav-link{
+    color: #726E8D;
+    font-size: 1.25rem;
+}
+
+.menu{
+    display: none;
+}
+.about-brand{
+    display: flex;
+    margin-block: 3.75rem;
+    margin-inline: 5rem;
+}
+
+.about-brand-information{
+    background-color: #2A254B;
+    padding: 3.75rem;
+    color: white;
+}
+
+.button-viewcollection{
+    background-color: #F9F9F926;
+    margin-top: 2.5rem;
+    color: white;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    transition: all ease .3s;
+}
+
+.button-viewcollection:hover{
+    background-color: #F9F9F94D;
+}
+
+.main-text-about-brand{
+    font-size: 2rem;
+    max-width: 32rem;
+}
+
+.text-about-brand{
+    font-size: 1.25rem;
+    margin-top: 12.25rem;
+    line-height: 1.4;
+}
+
+.menu-icons{
+    display: flex;
+    gap: 1rem;
+    height: 1rem;
+    margin-left: 2rem
+}
+
+.ceramics{
+    margin-block: 5rem 3.25rem;
+    color: #2A254B;
+    display: grid;
+    margin-inline: 5rem;
+}
+
+.ceramics .button-viewcollection{
+    color:#2A254B;
+    background-color: #F9F9F9;
+    width: fit-content;
+    justify-self: center;
+    transition: .3s;
+}
+.ceramics .button-viewcollection:hover{
+    background-color: #EBE8F4;
+}
+.title-ceramics{
+    font-size: 2rem;  
+}
+
+.list-of-items{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    padding-block: 2rem;
+}
+
+.item{
+    display: grid;
+    gap: 1.5rem;
+    font-size: 1.25rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.item:hover{
+    transform: scale(1.05);
+}
+
+.list-of-items img{
+    height: 23.4rem;
+    width: 19rem
+}
+
+.about-product{
+    color:#2A254B
+}
+
+.button-get-in-touch{
+    color: #2A254B;
+    background-color:#F9F9F9;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+.button-get-in-touch:hover{
+    background-color: #EBE8F4;
+}
+.get-in-touch{
+    display: flex;
+}
+
+.get-in-touch h5{
+    font-size: 1.5rem;
+}
+
+.get-in-touch p{
+    font-size: 1.25rem;
+    color:#505977;
+}
+
+.get-in-touch-text{
+    display: grid;
+    gap: 1.5rem;
+    padding: 4.5rem 6.25rem 0rem 0rem;
+    margin-left: 5rem;
+}
+
+.button-get-in-touch {
+    margin: 6rem 6rem 0rem 5rem;
+}
+
+footer{
+    background-color: #2A254B;
+    color: white;
+    padding: 3.4rem 5.25rem;
+    font-size: 1rem;
+}
+
+footer a{
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-title{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 3.5rem;
+}
+
+input{
+    background-color: #FFFFFF26;
+    padding: 1rem 19.6rem 1rem 2rem;
+    font-size: 1.25rem;
+    color: white
+}
+
+input::placeholder{
+    color: white
+}
+
+.footer-upper-block{
+    border-bottom: 1px solid #4E4D93;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.copyright-and-icons{
+    padding-block: 1.5rem 3.1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.button-signup{
+    padding: 1rem 2rem;
+    background-color: white;
+    color:#2A254B;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+.button-signup:hover{
+    background-color: #EBE8F4;
+}
+
+.signup-block{
+    display: flex;
+}
+
+
+
+
+/*PAGE 2*/
+
+
+.main-page-item{
+    background-color: #F9F9F9;
+}
+
+.main-item{
+    display: flex;
+    gap: 4.1rem;
+    padding: 3.1rem 5rem
+}
+
+.main-item h1, .main-item h2{
+    font-size: 1.5rem;
+    color:#2A254B;
+}
+
+.text-about-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-block: 1.5rem;
+    max-width: 31rem;
+}
+
+.text-description{
+    font-size: 1rem;
+    color:#2A254B;
+}
+
+.name-of-item, .description-of-product, .dimensions{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem
+}
+.dimensions-parametrs{
+    display: flex;
+    gap: 2rem;
+    font-size: 1.25rem;
+    color:#2A254B
+}
+
+.parametr-width{
+    border-right: 1px solid #EBE8F4;
+    border-left: 1px solid #EBE8F4;
+    padding-inline: 2.4rem
+}
+
+.add-to-cart-button{
+    background-color:#2A254B;
+    color: #F9F9F9;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    transition: .3s;
+    width: fit-content;
+    justify-self: center;
+    transition: .3s;
+}
+.item-buttons{
+    display: flex;
+    gap: 1rem
+}
+.favorite-button{
+    color: #2A254B;
+    background-color:white;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    font-size: 1.25rem;
+    transition: .3s;
+}
+
+.quantity-value{
+    background-color: white;
+    color:#2A254B;
+    width: 7.6rem
+}
+
+.quantity-value::placeholder{
+    color: #2A254B
+}
