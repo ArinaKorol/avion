@@ -1,11 +1,9 @@
-main{
-    font-weight: 400;
-}
-
 .wrap{
     padding-right: calc(50% - 720px);
     padding-left: calc(50% - 720px);
 }
+
+/*HEADER*/
 
 header{
     margin-inline: 5rem;
@@ -28,6 +26,20 @@ nav ul{
 .menu{
     display: none;
 }
+
+.menu-icons #button-menu-mobile{
+    display: none;
+}
+
+.menu-icons{
+    display: flex;
+    gap: 1rem;
+    height: 1rem;
+    margin-left: 2rem
+}
+
+/*ABOUT BRAND*/
+
 .about-brand{
     display: flex;
     margin-block: 3.75rem;
@@ -65,12 +77,44 @@ nav ul{
     line-height: 1.4;
 }
 
-.menu-icons{
+/* DIFFERENT ABOUT OUR BRAND*/
+
+.different-about-brand{
     display: flex;
-    gap: 1rem;
-    height: 1rem;
-    margin-left: 2rem
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-inline: 5rem;
+    color: #2A254B;
+    margin-block: 2rem
 }
+
+.different-about-brand-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5rem
+}
+
+.dab-block{
+    display: flex;
+    flex-direction: column;
+    gap:0.5rem;
+    max-width: 17rem;
+}
+
+.dab-icon{
+    width: 1.5rem;
+    height: auto
+}
+
+.title-block-dab{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.dab-text{
+    font-size: 1.25rem;
+}
+/*CERAMICS*/
 
 .ceramics{
     margin-block: 5rem 3.25rem;
@@ -86,10 +130,12 @@ nav ul{
     justify-self: center;
     transition: .3s;
 }
+
 .ceramics .button-viewcollection:hover{
     background-color: #EBE8F4;
 }
-.title-ceramics{
+
+.title-of-block{
     font-size: 2rem;  
 }
 
@@ -117,6 +163,42 @@ nav ul{
     width: 19rem
 }
 
+/*CLUB*/
+
+.club{
+    margin-block: 5rem 3.25rem;
+    color: #2A254B;
+    display: grid;
+    background-color: #F9F9F9;
+    text-align: center;
+    justify-content: center;
+}
+
+.club-content{
+    background-color: #FFFFFF;
+    margin: 3.3rem 5rem;
+    padding: 4.25rem 21.9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.club-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 29rem;
+}
+
+.club-main-text{
+    font-size: 1.5rem;
+}
+.club-text-information{
+    font-size: 1.25rem;
+}
+
+/*GET IN TOUCH*/
+
 .about-product{
     color:#2A254B
 }
@@ -129,9 +211,11 @@ nav ul{
     font-size: 1.25rem;
     transition: .3s;
 }
+
 .button-get-in-touch:hover{
     background-color: #EBE8F4;
 }
+
 .get-in-touch{
     display: flex;
 }
@@ -145,6 +229,12 @@ nav ul{
     color:#505977;
 }
 
+.get-in-touch-text-and-button{
+    display: flex;
+    flex-direction: column;
+    gap: 6.5rem
+}
+
 .get-in-touch-text{
     display: grid;
     gap: 1.5rem;
@@ -153,8 +243,11 @@ nav ul{
 }
 
 .button-get-in-touch {
-    margin: 6rem 6rem 0rem 5rem;
+    width: max-content;
+    margin-left: 5rem;
 }
+
+/*FOOTER*/
 
 footer{
     background-color: #2A254B;
@@ -181,21 +274,45 @@ footer ul{
     margin-bottom: 3.5rem;
 }
 
-input{
+.signup-input{
     background-color: #FFFFFF26;
-    padding: 1rem 19.6rem 1rem 2rem;
+    padding: 1rem 2rem;
+    width: 31rem;
     font-size: 1.25rem;
     color: white
 }
 
-input::placeholder{
+.club .signup-input{
+    background-color: #F9F9F9;
+    color:#2A254B;
+    width: 21.3rem;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.club .signup-input::placeholder{
+    color: #726E8D
+}
+
+.club .button-signup{
+    color: #FFFFFF;
+    background-color: #2A254B;
+    width: max-content;
+}
+
+.club .button-signup:hover{
+    background-color: #4E4D93;
+}
+.signup-input::placeholder{
     color: white
+}
+.signup{
+    display: flex;
 }
 
 .footer-upper-block{
     border-bottom: 1px solid #4E4D93;
     display: flex;
-
     justify-content: space-between;
 }
 
@@ -217,15 +334,16 @@ input::placeholder{
     font-size: 1.25rem;
     transition: .3s;
 }
+
 .button-signup:hover{
     background-color: #EBE8F4;
 }
 
 .signup-block{
     display: flex;
+    flex-direction: column;
+    gap: 1.25rem
 }
-
-
 
 
 /*PAGE 2*/
@@ -264,6 +382,7 @@ input::placeholder{
     flex-direction: column;
     gap: 1.25rem
 }
+
 .dimensions-parametrs{
     display: flex;
     gap: 2rem;
@@ -277,36 +396,79 @@ input::placeholder{
     padding-inline: 2.4rem
 }
 
+.item-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
 .add-to-cart-button{
     background-color:#2A254B;
     color: #F9F9F9;
+}
+
+.add-to-cart-button, .favorite-button{
     padding-inline: 2rem;
     padding-block: 1rem;
     font-size: 1.25rem;
     transition: .3s;
-    width: fit-content;
-    justify-self: center;
-    transition: .3s;
+    width:auto
 }
-.item-buttons{
-    display: flex;
-    gap: 1rem
-}
+
 .favorite-button{
+    background-color: #FFFFFF;
     color: #2A254B;
-    background-color:white;
-    padding-inline: 2rem;
-    padding-block: 1rem;
-    font-size: 1.25rem;
-    transition: .3s;
 }
 
 .quantity-value{
-    background-color: white;
     color:#2A254B;
-    width: 7.6rem
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.25rem;
+    align-content: center;
+}
+
+.quantity-buttons-and-value button{
+    gap: 0rem;
+    padding: 0.7rem 0.2rem;
+    background-color: #FFFFFF
 }
 
 .quantity-value::placeholder{
-    color: #2A254B
+    color: #2A254B;
+}
+
+.club-page-item{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #FFFFFF;
+}
+
+.club-page-item-content{
+    display: flex;
+    flex-direction: column;
+    padding: 4.7rem 5rem;
+    gap: 13rem;
+    text-align: center;
+}
+
+.club-page-item .signup-input{
+    background-color: #F9F9F9;
+    color:#2A254B;
+    width: 20em;
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+}
+
+.club-page-item .signup-input::placeholder{
+    color: #726E8D
+}
+
+.club-page-item .button-signup{
+    color: #FFFFFF;
+    background-color: #2A254B;
+    width: max-content;
+}
+
+.club-page-item .button-signup:hover{
+    background-color: #4E4D93;
 }

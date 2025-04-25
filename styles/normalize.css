@@ -44,5 +44,6 @@ html {
 * {
 	line-height: 1.4;
 	font-family: "Roboto";
+	font-weight: 400;
 	/* background: #f5f5f5; */
 }

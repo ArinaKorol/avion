@@ -1,64 +1,59 @@
-@media (min-width: 300px) and (max-width: 600px){
-    main{
-        font-weight: 400;
-    }
-    
-    .wrap{
-        padding-right: calc(50% - 720px);
-        padding-left: calc(50% - 720px);
-    }
-    
+@media (min-width: 300px) and (max-width: 768px){
     header{
         margin-inline: 1.5rem;
-        display: flex;
-        justify-content: space-between;
-        padding-block: 1.2rem;
     }
     
     nav{
         display: none;
     }
+
     .menu{
-        display: block;
         z-index: 0;
         background-color: white;
+        position: absolute;
+        top: 2.5rem;
+        right: 0rem
     }
+
+    .menu-icons #button-menu-mobile{
+        display: block;
+    }
+    
     .dropdown-menu{
         position:absolute;
         right: 1.5rem;
         background-color: white;
         text-align: right;
     }
+
     .dropdown-menu a{
         font-size: 1rem;
         color:#2A254B;
         padding: 2rem 1rem;
     }
+
     .dropdown-menu li{
         border: #494565 2px solid
     }
+
     .chair-background{
         display: none;
     }
 
     .list-of-items{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-        justify-content: space-around;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem; 
     }
 
     .about-brand{
         width: fit-content;
         font-size: 1.25rem;
-        margin-inline: 0;
-        margin-block: 0rem
+        margin: 0;
     }
     
     .about-brand-information{
-        background-color: #2A254B;
-        padding: 1.5rem;
-        color: white;
+        padding: 2.8rem 1.5rem;
         display: flex;
         flex-direction: column;
     }
@@ -66,10 +61,6 @@
     .button-viewcollection{
         margin-top: 2rem;
         order: 3;
-    }
-
-    .button-viewcollection:hover{
-        background-color: #F9F9F94D;
     }
     
     .main-text-about-brand{
@@ -82,21 +73,23 @@
         order: 2;
         margin-top: 10rem;
     }
-    
-    .menu-icons{
-        display: flex;
-        gap: 1rem;
-        height: 1rem;
-        margin-left: 2rem
+
+    .different-about-brand .title-of-block{
+        font-size: 1.25rem;
     }
     
+    .title-block-dab{
+        font-weight: 400;
+    }
+    .dab-text{
+        font-size: 1rem;
+    }
+
     .ceramics{
         margin-block: 3rem 5.1rem;
-        color: #2A254B;
-        display: grid;
         margin-inline: 1.5rem;
     }
-    
+
     #chair{
         order:4
     }
@@ -109,31 +102,28 @@
     #vase{
         order:3
     }
+
     .ceramics .button-viewcollection{
         width: auto;
         justify-self: normal;
         margin-top: 0.7rem;
     }
+
     .list-of-items{
         padding-block: 1rem;
     }
+
     .title-ceramics{
         font-size: 1.25rem;  
     }
     
     .item{
-        display: grid;
-        gap: 1.5rem;
         font-size: 1rem;
     }
 
     .list-of-items img{
-        height: 13.25rem;
-        width: 10rem
-    }
-    
-    .about-product{
-        color:#2A254B
+        height: 13.25rem ;
+        width: 10.1rem
     }
     
     .button-get-in-touch{
@@ -148,73 +138,120 @@
         flex-direction: column;
         margin-inline: 0rem;
     }
+
     .get-in-touch img{
         position: relative;
     }
 
-    .icons, .footer-upper-block{
-        display: none;
-    }
-
     .get-in-touch-text{
-        display: grid;
-        gap: 1.5rem;
         padding: 0rem;
         max-width: fit-content;
-        margin-left: 0rem;
-        margin-inline: 1.5rem
+        margin-inline: 1.5rem;
     }
-    
+
+    .get-in-touch-text-and-button{
+        gap: 3.5rem
+    }
+
+    .club{
+        margin-block: 2rem;
+        margin-inline: 1.5rem;
+        text-align: left;
+        background-color: #FFFFFF;
+    }
+
+    .club-content{
+    padding: 0rem;
+    }
+    .club h3{
+        font-size: 1.25rem;
+    }
+    .club p{
+    font-size: 1rem;
+    }
+    .club .signup-input{
+        width: 13.1rem;
+    }
+    .add-to-cart-button, .favorite-button{
+        margin: auto;
+    }
+    .club-text{
+        max-width: 21rem;
+    }
+
+
     footer{
-        background-color: #2A254B;
-        color: white;
         padding: 2.5rem 1.5rem;
     }
 
-    input{
-        background-color: #FFFFFF26;
-        padding: 1rem 2rem 1rem 2rem;
-        width: min-content;
-        font-size: 1.25rem;
-        color: white
+    .signup-input{
+        padding: 1rem 1.5rem;
+        width: 13.1rem;
+        margin-bottom: 1rem;
     }
-    
-   
+
+    .button-signup{
+        height:max-content
+    }
+
     .footer-upper-block{
-        display: grid;
+        flex-wrap: wrap;
         margin-inline: 0rem;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        width: min-content;
         gap: 1rem;
-        justify-content: normal;
+        justify-content: space-between;
+    }
+
+    footer ul{
+        margin-bottom: 1.5rem
     }
 
     .copyright-and-icons{
-        padding-block: 1.5rem 3.1rem;
-        display: flex;
-        justify-content: space-between;
         align-self: end;
     }
-    #categories{
-        grid-column-start:1;
-        grid-row-start: 1;
-        width: 100px
-    }
-    #menu{
-        grid-column-start: 2;
-        grid-row-start: 1;
-    }
-    #our-company{
-        grid-row-start: 2;
-    }
-    #form-sign-up{
-        grid-row-start: 3;
-    }
+
     .icons{
         display: none;
     }
     
     
+    /*PAGE 2*/
+
+    .main-item{
+        flex-direction: column;
+        padding: 0
+    }
     
+    .text-about-item{
+        padding: 1.25rem;
+    }
+    
+    .item-buttons{
+        flex-wrap: wrap;
+    }
+
+    .dimensions-parametrs{
+        font-size: 1rem;
+        gap: 1rem
+    }
+
+    .couch-bg{
+        width: 24.3rem;
+        height: auto
+    }
+
+    .club-page-item-content{
+        padding: 1.5rem;
+        gap: 2rem
+    }
+    .club-main-text{
+        font-size: 1.25rem;
+    }
+    .club-text-information{
+        font-size: 1rem;
+    }
+    .club-page-item .signup-input{
+        width: 13.1rem;
+    }
+    
+
 }
