@@ -8,17 +8,30 @@ function toShowMenu() {
 }
 
 
-let signUpButton = document.getElementsByClassName("button-signup")
+// let signUpButton = document.getElementsByClassName("button-signup")
+let signUpButton = document.querySelectorAll(".button-signup")
+let signUpText = document.querySelectorAll(".text-input")
+let signUpMails = document.querySelectorAll(".signup-input")
+// console.log(signUpButton)
 
 const EMAIL_REGEXP = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i;
 function isEmailValid(value) {
     return EMAIL_REGEXP.test(value);
 }
 
+// signUpButton.forEach(btn => {
+//     btn.addEventListener("click", checkValues)
+// });
+
+signUpMails.forEach(input => {
+    input.addEventListener("input", () => checkValues(input));
+});
+
 function checkValues(event) {
     event.preventDefault();
-    let mail = document.getElementsByClassName("signup-input")[0].value.trim();
-    let text = document.getElementsByClassName("text-input")[0];
+
+    // let mail = document.getElementsByClassName("signup-input").value.trim();
+    // let text = document.getElementsByClassName("text-input");
     if (mail === ""){
         text.textContent = 'Fill in the input field'
     } else {
@@ -30,4 +43,4 @@ function checkValues(event) {
     }
 }
 
-signUpButton[0].addEventListener("click", checkValues)
+// signUpButton[0].addEventListener("click", checkValues)

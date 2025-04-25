@@ -23,17 +23,17 @@
         position:absolute;
         right: 1.5rem;
         background-color: white;
-        text-align: right;
+        text-align: center;
     }
 
     .dropdown-menu a{
-        font-size: 1rem;
+        font-size: 1.75rem;
         color:#2A254B;
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
     }
 
     .dropdown-menu li{
-        border: #494565 2px solid
+        border: #494565 3px solid
     }
 
     .chair-background{
